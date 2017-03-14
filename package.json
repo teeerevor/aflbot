@@ -1,0 +1,25 @@
+{
+  "name": "aflbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-1": "^6.22.0",
+    "chai": "^3.5.0",
+    "hapi": "^16.1.0",
+    "mocha": "^3.2.0",
+    "moment": "^2.17.1",
+    "node-fetch": "^1.6.3"
+  },
+  "scripts": {
+    "oeuahtart": "babel-node bot-single.js",
+    "start": "babel-node watcher.js",
+    "test": "mocha --compilers js:babel-core/register",
+    "watch": "mocha --watch --compilers js:babel-core/register"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.23.0"
+  }
+}
